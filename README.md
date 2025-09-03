@@ -24,4 +24,4 @@ This project uses Roach PHP and Symfony which is probably overkill, but is quick
 
 ### Changelog
 
-Added Readme, Added ErrorSpider and CrawlSite classes 
+Added Readme, and added ErrorSpider and CrawlSite classes 
