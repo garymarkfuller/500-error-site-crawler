@@ -1,0 +1,51 @@
+{
+    "name": "garymarkfuller/500-error-site-crawler",
+    "type": "project",
+    "license": "MIT",
+    "description": "A simple PHP crawler and Symfony command for finding 500 errors on a website",
+    "homepage": "https://github.com/garymarkfuller/500-error-site-crawler",
+    "authors": [
+        {
+            "name": "Gary Fuller",
+            "email": "gary.mark.fuller@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "crawler",
+        "500 errors",
+        "website monitoring"
+    ],
+    "require": {
+        "roach-php/core": "^3.2",
+        "symfony/console": "^7.3",
+        "symfony/flex": "^2.8",
+        "symfony/runtime": "^7.3",
+        "symfony/framework-bundle": "^7.3",
+        "symfony/yaml": "^7.3",
+        "spatie/browsershot": "^5.0",
+        "spatie/robots-txt": "^2.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    }
+}
